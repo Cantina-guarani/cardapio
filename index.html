@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cantina GUARANI • Cardápio</title>
+  <meta name="description" content="Cardápio oficial da Cantina GUARANI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <div class="logo" aria-label="Cantina Guarani">Cantina <span>GUARANI</span></div>
+        <div class="tag">Desde 2025 • Sabor e tradição</div>
+      </div>
+      <a class="top-phone" href="tel:+556293223030" aria-label="Ligar agora">📞 +55 62 9322-3030</a>
+      <a class="cta" href="https://wa.me/556293223030" aria-label="Fazer pedido no WhatsApp">Fazer pedido</a>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <h1>Cardápio</h1>
+    <p>Feito com carinho, servido com alegria. Escolha por categoria abaixo.</p>
+  </section>
+
+  <section class="filters container" aria-label="Filtros de categoria">
+    <input type="radio" name="cat" id="cat-all" checked>
+    <input type="radio" name="cat" id="cat-lanches">
+    <input type="radio" name="cat" id="cat-bebidas">
+    <input type="radio" name="cat" id="cat-doces">
+
+    <div class="tabs" role="tablist">
+      <label for="cat-all"     role="tab" aria-controls="all">Tudo</label>
+      <label for="cat-lanches" role="tab" aria-controls="lanches">Lanches</label>
+      <label for="cat-bebidas" role="tab" aria-controls="bebidas">Bebidas</label>
+      <label for="cat-doces"   role="tab" aria-controls="doces">Doces</label>
+    </div>
+  </section>
+
+  <main class="menu container" id="all">
+    <!-- LANCHES -->
+    <h2 class="section-title" id="lanches">Lanches</h2>
+    <ul class="grid">
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" src="img/pao-de-queijo-user.jpg" srcset="img/pao-de-queijo-user-480.jpg 480w, img/pao-de-queijo-user-768.jpg 768w, img/pao-de-queijo-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Refrigerante 2L" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Pão de Queijo</h3>
+              <span class="price">R$ 1,00</span>
+            </div>
+            <p class="desc">Clássico mineiro, assado na hora.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 480w, https://source.unsplash.com/768x576/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 768w, https://source.unsplash.com/1080x810/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 1080w" src="https://source.unsplash.com/800x600/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281" alt="Torta de Carne" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Torta de Carne</h3>
+              <span class="price">R$ 7,00</span>
+            </div>
+            <p class="desc">Folhada e bem recheada.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <!-- BEBIDAS -->
+    <h2 class="section-title" id="bebidas">Bebidas</h2>
+    <ul class="grid">
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?soda%20can,cola,beverage,macro&sig=8882 480w, https://source.unsplash.com/768x576/?soda%20can,cola,beverage,macro&sig=8882 768w, https://source.unsplash.com/1080x810/?soda%20can,cola,beverage,macro&sig=8882 1080w" src="https://source.unsplash.com/800x600/?soda%20can,cola,beverage,macro&sig=8882" alt="Refrigerante em lata" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Refrigerante (lata)</h3>
+              <span class="price">R$ 4,50</span>
+            </div>
+            <p class="desc">Diversos sabores.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 480w, https://source.unsplash.com/768x576/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 768w, https://source.unsplash.com/1080x810/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 1080w" src="https://source.unsplash.com/800x600/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151" alt="Refrigerante 2 litros" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Refrigerante 2L</h3>
+              <span class="price">R$ 14,00</span>
+            </div>
+            <p class="desc">Para compartilhar.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?food,drink,bright&sig=9671 480w, https://source.unsplash.com/768x576/?food,drink,bright&sig=9671 768w, https://source.unsplash.com/1080x810/?food,drink,bright&sig=9671 1080w" src="https://source.unsplash.com/800x600/?food,drink,bright&sig=9671" alt="Isotônico 500&nbsp;ml" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Isotônico 500&nbsp;ml</h3>
+              <span class="price">R$ 7,00</span>
+            </div>
+            <p class="desc">Refrescante e repõe eletrólitos.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?food,drink,bright&sig=9112 480w, https://source.unsplash.com/768x576/?food,drink,bright&sig=9112 768w, https://source.unsplash.com/1080x810/?food,drink,bright&sig=9112 1080w" src="https://source.unsplash.com/800x600/?food,drink,bright&sig=9112" alt="Limoneto 500&nbsp;ml" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Limoneto 500&nbsp;ml</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Sabor limão.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?sparkling%20water,mineral%20water,bottle&sig=5247 480w, https://source.unsplash.com/768x576/?sparkling%20water,mineral%20water,bottle&sig=5247 768w, https://source.unsplash.com/1080x810/?sparkling%20water,mineral%20water,bottle&sig=5247 1080w" src="https://source.unsplash.com/800x600/?sparkling%20water,mineral%20water,bottle&sig=5247" alt="Água com gás" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Água c/ gás</h3>
+              <span class="price">R$ 4,00</span>
+            </div>
+            <p class="desc">Geladinha.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?energy%20drink%20can,energy%20drink,beverage&sig=7342 480w, https://source.unsplash.com/768x576/?energy%20drink%20can,energy%20drink,beverage&sig=7342 768w, https://source.unsplash.com/1080x810/?energy%20drink%20can,energy%20drink,beverage&sig=7342 1080w" src="https://source.unsplash.com/800x600/?energy%20drink%20can,energy%20drink,beverage&sig=7342" alt="Energético" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Energético</h3>
+              <span class="price">R$ 11,00</span>
+            </div>
+            <p class="desc">Para dar aquele gás.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?coffee%20cup,espresso,latte%20art,close-up&sig=725 480w, https://source.unsplash.com/768x576/?coffee%20cup,espresso,latte%20art,close-up&sig=725 768w, https://source.unsplash.com/1080x810/?coffee%20cup,espresso,latte%20art,close-up&sig=725 1080w" src="https://source.unsplash.com/800x600/?coffee%20cup,espresso,latte%20art,close-up&sig=725" alt="Café (meio copo)" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Café (meio copo)</h3>
+              <span class="price">R$ 2,00</span>
+            </div>
+            <p class="desc">Passado na hora.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <!-- DOCES -->
+    <h2 class="section-title" id="doces">Doces <span class="muted">• por Gabriela Mendanha</span></h2>
+    <ul class="grid">
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 480w, https://source.unsplash.com/768x576/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 768w, https://source.unsplash.com/1080x810/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 1080w" src="https://source.unsplash.com/800x600/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978" alt="Bolo Gelado" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Bolo Gelado</h3>
+              <span class="price">R$ 12,00</span>
+            </div>
+            <p class="desc">Sabores: chocolatudo, prestígio.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 480w, https://source.unsplash.com/768x576/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 768w, https://source.unsplash.com/1080x810/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 1080w" src="https://source.unsplash.com/800x600/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489" alt="Tortas no pote" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Tortas no pote</h3>
+              <span class="price">R$ 15,00</span>
+            </div>
+            <p class="desc">Meio amargo, ninho c/ brigadeiro, choconinho.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?pudim,flan,creme%20caramel,dessert&sig=2737 480w, https://source.unsplash.com/768x576/?pudim,flan,creme%20caramel,dessert&sig=2737 768w, https://source.unsplash.com/1080x810/?pudim,flan,creme%20caramel,dessert&sig=2737 1080w" src="https://source.unsplash.com/800x600/?pudim,flan,creme%20caramel,dessert&sig=2737" alt="Pudim" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Pudim</h3>
+              <span class="price">R$ 10,00</span>
+            </div>
+            <p class="desc">Leite condensado com calda de caramelo.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?cake%20slice,layer%20cake,dessert,bright&sig=4468 480w, https://source.unsplash.com/768x576/?cake%20slice,layer%20cake,dessert,bright&sig=4468 768w, https://source.unsplash.com/1080x810/?cake%20slice,layer%20cake,dessert,bright&sig=4468 1080w" src="https://source.unsplash.com/800x600/?cake%20slice,layer%20cake,dessert,bright&sig=4468" alt="Bolo (fatia)" loading="lazy" decoding="async">
+          <div class="content">
+            <div class="card-head">
+              <h3>Bolo (fatia)</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Sabores do dia.</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <aside class="promo" aria-label="Promo do dia">
+      <div class="promo-badge">Promo do dia</div>
+      <p>Combos especiais com bebida incluída. Peça na cantina! 🍽️</p>
+      <p class="fine">* Valores sujeitos a alteração sem aviso prévio.</p>
+    </aside>
+  </main>
+
+  <section class="info container" id="horarios">
+    <h2 class="section-title">Horários</h2>
+    <ul class="hours">
+      <li><strong>Seg–Sex:</strong> 08:00–20:00</li>
+      <li><strong>Sáb:</strong> 09:00–16:00</li>
+      <li><strong>Dom:</strong> Fechado</li>
+    </ul>
+  </section>
+
+  <section class="info container" id="onde">
+    <h2 class="section-title">Como chegar</h2>
+    <p>Endereço: <strong>CAEBM - Sala do Cadete de Dia</strong></p>
+  </section>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Cantina GUARANI • Todos os direitos reservados</p>
+    <p class="fine">Cadete Carvalho, CFO II - A</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
