@@ -205,3 +205,34 @@ button, a, input, label { touch-action: manipulation; }
   .cta { order: 2; }
   .brand { order: 1; width: 100%; }
 }
+
+
+/* ===== PIX Payment ===== */
+.payment .pix-card {
+  display: grid; gap: 16px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+.pix-title { font-weight: 800; font-size: 1.1rem; }
+.pix-sub { color: var(--muted); margin-top: -2px; }
+.pix-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-top: 1px dashed var(--stroke); }
+.pix-row:first-of-type { border-top: 0; }
+.pix-label { color: var(--muted); font-size: .9rem; }
+.pix-value { font-weight: 700; }
+.pix-code { display:flex; gap:10px; align-items:center; justify-content:space-between; padding:10px; border:1px solid var(--stroke); border-radius:12px; background: var(--surface-2); }
+.pix-code code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Courier New", monospace; font-size:.98rem; word-break: break-all; }
+.copy-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid color-mix(in oklab, var(--primary) 40%, var(--stroke)); background: color-mix(in oklab, var(--primary) 14%, transparent); color: var(--primary-600); font-weight: 800; cursor:pointer; min-height:40px;}
+.copy-btn:hover { background: color-mix(in oklab, var(--primary) 18%, transparent); }
+.copy-btn.sm { padding:8px 12px; min-height:36px; }
+.pix-qr { text-align:center; }
+.pix-qr img { width: 160px; height: 160px; object-fit: contain; border-radius: 12px; border: 1px solid var(--stroke); background: white; padding: 8px; }
+.pix-caption { color: var(--muted); font-size: .85rem; margin-top: 6px; }
+@media (max-width: 720px) {
+  .payment .pix-card { grid-template-columns: 1fr; }
+  .pix-qr img { width: 200px; height: 200px; margin-inline: auto; }
+}
