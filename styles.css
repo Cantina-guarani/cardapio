@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; }
 /* ===============================
    Cantina GUARANI — v2 (Mobile-first, fotos + nova paleta)
    =============================== */
@@ -82,7 +83,7 @@ body {
 .filters { margin: 12px 0 8px; position: sticky; top: 64px; z-index: 20; }
 .filters input[type="radio"] { display: none; }
 .tabs {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(6, 1fr);
   gap: 8px; padding: 8px;
   background: var(--surface); border: 1px solid var(--stroke); border-radius: 14px;
   box-shadow: var(--shadow);
@@ -97,14 +98,16 @@ body {
 #cat-pratos:checked  ~ .tabs label[for="cat-pratos"],
 #cat-lanches:checked ~ .tabs label[for="cat-lanches"],
 #cat-bebidas:checked ~ .tabs label[for="cat-bebidas"],
-#cat-doces:checked   ~ .tabs label[for="cat-doces"] {
+#cat-doces:checked   ~ .tabs label[for="cat-doces"],
+#cat-gelados:checked ~ .tabs label[for="cat-gelados"],
+#cat-outros:checked  ~ .tabs label[for="cat-outros"] {
   background: color-mix(in oklab, var(--primary) 16%, transparent);
   border-color: color-mix(in oklab, var(--primary) 36%, var(--stroke));
   color: color-mix(in oklab, #fff 92%, var(--text));
 }
 
 /* Menu grid */
-.section-title { margin: 18px 0 8px; font-size: 1.2rem; letter-spacing: .2px; }
+.section-title { scroll-margin-top: 120px; margin: 18px 0 8px; font-size: 1.2rem; letter-spacing: .2px; }
 .menu { padding-bottom: 60px; }
 
 .grid {
@@ -112,7 +115,7 @@ body {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
 }
 @media (min-width: 720px) { .grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 980px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 980px) { .grid { grid-template-columns: repeat(6, 1fr); } }
 
 .card {
   overflow: hidden; border-radius: 16px; background: var(--surface);
