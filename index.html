@@ -15,10 +15,10 @@
     <div class="header-inner container">
       <div class="brand">
         <div class="logo" aria-label="Cantina Guarani">Cantina <span>GUARANI</span></div>
-        <div class="tag">Desde 2025 • Sabor e tradição</div>
+        <div class="tag">Desde 2025 • Sabor e comodidade</div>
       </div>
-      <a class="top-phone" href="tel:+556293223030" aria-label="Ligar agora">📞 +55 62 9322-3030</a>
-      <a class="cta" href="https://wa.me/556293223030" aria-label="Fazer pedido no WhatsApp">Fazer pedido</a>
+      <!-- <a class="top-phone" href="tel:+5562993223030" aria-label="Ligar agora">📞 +55 62 9322-3030</a> -->
+      <a class="cta" href="https://wa.me/5562993223030" aria-label="Fazer pedido no WhatsApp">Falar com Cantina Guarani - Whastapp</a>
     </div>
   </header>
 
@@ -28,16 +28,18 @@
   </section>
 
   <section class="filters container" aria-label="Filtros de categoria">
-    <input type="radio" name="cat" id="cat-all" checked>
-    <input type="radio" name="cat" id="cat-lanches">
+<input type="radio" name="cat" id="cat-lanches" checked>
     <input type="radio" name="cat" id="cat-bebidas">
     <input type="radio" name="cat" id="cat-doces">
+    <input type="radio" name="cat" id="cat-gelados">
+    <input type="radio" name="cat" id="cat-outros">
 
     <div class="tabs" role="tablist">
-      <label for="cat-all"     role="tab" aria-controls="all">Tudo</label>
-      <label for="cat-lanches" role="tab" aria-controls="lanches">Lanches</label>
+<label for="cat-lanches" role="tab" aria-controls="lanches">Lanches</label>
       <label for="cat-bebidas" role="tab" aria-controls="bebidas">Bebidas</label>
       <label for="cat-doces"   role="tab" aria-controls="doces">Doces</label>
+      <label for="cat-gelados" role="tab" aria-controls="gelados">Gelados</label>
+      <label for="cat-outros"  role="tab" aria-controls="outros">Outros</label>
     </div>
   </section>
 
@@ -47,11 +49,11 @@
     <ul class="grid">
       <li class="item" data-cat="lanches">
         <article class="card">
-          <img class="thumb" src="img/pao-de-queijo-user.jpg" srcset="img/pao-de-queijo-user-480.jpg 480w, img/pao-de-queijo-user-768.jpg 768w, img/pao-de-queijo-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Refrigerante 2L" decoding="async" loading="lazy">
+          <img class="thumb" src="img/pao-de-queijo-user.jpg" srcset="img/pao-de-queijo-user-480.jpg 480w, img/pao-de-queijo-user-768.jpg 768w, img/pao-de-queijo-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Fatia de torta de carne folhada e recheada" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
-              <h3>Pão de Queijo</h3>
-              <span class="price">R$ 1,00</span>
+              <h3>Pão de Queijo (un)</h3>
+              <span class="price">R$ 1,50</span>
             </div>
             <p class="desc">Clássico mineiro, assado na hora.</p>
           </div>
@@ -59,24 +61,90 @@
       </li>
       <li class="item" data-cat="lanches">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 480w, https://source.unsplash.com/768x576/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 768w, https://source.unsplash.com/1080x810/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281 1080w" src="https://source.unsplash.com/800x600/?meat%20pie,empadao,savory%20pie,food%20photography&sig=5281" alt="Torta de Carne" loading="lazy" decoding="async">
+          <img class="thumb" src="img/enroladinho-salsicha-user.jpg"
+               srcset="img/enroladinho-salsicha-user-480.jpg 480w, img/enroladinho-salsicha-user-768.jpg 768w, img/enroladinho-salsicha-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Enroladinho de Salsicha" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
-              <h3>Torta de Carne</h3>
-              <span class="price">R$ 7,00</span>
+              <h3>Enroladinho de Salsicha</h3>
+              <span class="price">R$ 6,00</span>
             </div>
-            <p class="desc">Folhada e bem recheada.</p>
+            <p class="desc">Macio, assado e saboroso.</p>
           </div>
         </article>
       </li>
-    </ul>
+
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" src="img/enroladinho-queijo-user.jpg"
+               srcset="img/enroladinho-queijo-user-480.jpg 480w, img/enroladinho-queijo-user-768.jpg 768w, img/enroladinho-queijo-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Enroladinho de Queijo" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Enroladinho de Queijo</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Recheado de queijo, macio e douradinho.</p>
+          </div>
+        </article>
+      </li>
+
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" src="img/americano-presunto-queijo-user.jpg"
+               srcset="img/americano-presunto-queijo-user-480.jpg 480w, img/americano-presunto-queijo-user-768.jpg 768w, img/americano-presunto-queijo-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Americano Presunto e Queijo" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Americano Presunto e Queijo</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Recheado de presunto e queijo, assado e douradinho.</p>
+          </div>
+        </article>
+      </li>
+
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" src="img/esfiha-carne-user.jpg"
+               srcset="img/esfiha-carne-user-480.jpg 480w, img/esfiha-carne-user-768.jpg 768w, img/esfiha-carne-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Esfiha de Carne" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Esfiha de Carne</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Recheio suculento de carne moída, assada no ponto.</p>
+          </div>
+        </article>
+      </li>
+
+      <li class="item" data-cat="lanches">
+        <article class="card">
+          <img class="thumb" src="img/esfiha-frango-user.jpg"
+               srcset="img/esfiha-frango-user-480.jpg 480w, img/esfiha-frango-user-768.jpg 768w, img/esfiha-frango-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Esfiha de Frango" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Esfiha de Frango</h3>
+              <span class="price">R$ 6,00</span>
+            </div>
+            <p class="desc">Massa macia e recheio de frango temperado.</p>
+          </div>
+        </article>
+      </li>
+</ul>
 
     <!-- BEBIDAS -->
     <h2 class="section-title" id="bebidas">Bebidas</h2>
-    <ul class="grid">
-      <li class="item" data-cat="bebidas">
+    <ul class="grid"><li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?soda%20can,cola,beverage,macro&sig=8882 480w, https://source.unsplash.com/768x576/?soda%20can,cola,beverage,macro&sig=8882 768w, https://source.unsplash.com/1080x810/?soda%20can,cola,beverage,macro&sig=8882 1080w" src="https://source.unsplash.com/800x600/?soda%20can,cola,beverage,macro&sig=8882" alt="Refrigerante em lata" loading="lazy" decoding="async">
+          <img class="thumb" src="img/refrigerante-lata-user.jpg" srcset="img/refrigerante-lata-user-480.jpg 480w, img/refrigerante-lata-user-768.jpg 768w, img/refrigerante-lata-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Refrigerante (lata)</h3>
@@ -88,7 +156,7 @@
       </li>
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 480w, https://source.unsplash.com/768x576/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 768w, https://source.unsplash.com/1080x810/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151 1080w" src="https://source.unsplash.com/800x600/?soda%20bottle,soft%20drink,plastic%20bottle&sig=9151" alt="Refrigerante 2 litros" loading="lazy" decoding="async">
+          <img class="thumb" src="img/refrigerante-2l-user.jpg" srcset="img/refrigerante-2l-user-480.jpg 480w, img/refrigerante-2l-user-768.jpg 768w, img/refrigerante-2l-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Refrigerante 2L</h3>
@@ -100,7 +168,22 @@
       </li>
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?food,drink,bright&sig=9671 480w, https://source.unsplash.com/768x576/?food,drink,bright&sig=9671 768w, https://source.unsplash.com/1080x810/?food,drink,bright&sig=9671 1080w" src="https://source.unsplash.com/800x600/?food,drink,bright&sig=9671" alt="Isotônico 500&nbsp;ml" loading="lazy" decoding="async">
+          <img class="thumb" src="img/suco-200ml-user.jpg"
+               srcset="img/suco-200ml-user-480.jpg 480w, img/suco-200ml-user-768.jpg 768w, img/suco-200ml-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Suco 200 ml (un)" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Suco 200 ml (un)</h3>
+              <span class="price">R$ 3,00</span>
+            </div>
+            <p class="desc">Diversos sabores</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" src="img/isotonico-user.jpg" srcset="img/isotonico-user-480.jpg 480w, img/isotonico-user-768.jpg 768w, img/isotonico-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Isotônico 500&nbsp;ml</h3>
@@ -112,7 +195,7 @@
       </li>
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?food,drink,bright&sig=9112 480w, https://source.unsplash.com/768x576/?food,drink,bright&sig=9112 768w, https://source.unsplash.com/1080x810/?food,drink,bright&sig=9112 1080w" src="https://source.unsplash.com/800x600/?food,drink,bright&sig=9112" alt="Limoneto 500&nbsp;ml" loading="lazy" decoding="async">
+          <img class="thumb" src="img/limoneto-user.jpg" srcset="img/limoneto-user-480.jpg 480w, img/limoneto-user-768.jpg 768w, img/limoneto-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Limoneto 500&nbsp;ml</h3>
@@ -124,48 +207,96 @@
       </li>
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?sparkling%20water,mineral%20water,bottle&sig=5247 480w, https://source.unsplash.com/768x576/?sparkling%20water,mineral%20water,bottle&sig=5247 768w, https://source.unsplash.com/1080x810/?sparkling%20water,mineral%20water,bottle&sig=5247 1080w" src="https://source.unsplash.com/800x600/?sparkling%20water,mineral%20water,bottle&sig=5247" alt="Água com gás" loading="lazy" decoding="async">
+          <img class="thumb" src="img/agua-gas-user.jpg" srcset="img/agua-gas-user-480.jpg 480w, img/agua-gas-user-768.jpg 768w, img/agua-gas-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
-              <h3>Água c/ gás</h3>
+              <h3>Água c/ gás (un)</h3>
               <span class="price">R$ 4,00</span>
             </div>
             <p class="desc">Geladinha.</p>
           </div>
         </article>
       </li>
+
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?energy%20drink%20can,energy%20drink,beverage&sig=7342 480w, https://source.unsplash.com/768x576/?energy%20drink%20can,energy%20drink,beverage&sig=7342 768w, https://source.unsplash.com/1080x810/?energy%20drink%20can,energy%20drink,beverage&sig=7342 1080w" src="https://source.unsplash.com/800x600/?energy%20drink%20can,energy%20drink,beverage&sig=7342" alt="Energético" loading="lazy" decoding="async">
+          <img class="thumb" src="img/agua-sem-gas-user.jpg"
+               srcset="img/agua-sem-gas-user-480.jpg 480w, img/agua-sem-gas-user-768.jpg 768w, img/agua-sem-gas-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Água sem gás (un)" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
-              <h3>Energético</h3>
-              <span class="price">R$ 11,00</span>
+              <h3>Água s/ gás (un)</h3>
+              <span class="price">R$ 2,00</span>
             </div>
-            <p class="desc">Para dar aquele gás.</p>
+            <p class="desc">Sem gás, bem geladinha.</p>
           </div>
         </article>
       </li>
       <li class="item" data-cat="bebidas">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?coffee%20cup,espresso,latte%20art,close-up&sig=725 480w, https://source.unsplash.com/768x576/?coffee%20cup,espresso,latte%20art,close-up&sig=725 768w, https://source.unsplash.com/1080x810/?coffee%20cup,espresso,latte%20art,close-up&sig=725 1080w" src="https://source.unsplash.com/800x600/?coffee%20cup,espresso,latte%20art,close-up&sig=725" alt="Café (meio copo)" loading="lazy" decoding="async">
+          <img class="thumb" src="img/energetico-user.jpg" srcset="img/energetico-user-480.jpg 480w, img/energetico-user-768.jpg 768w, img/energetico-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Energético Monster (un)</h3>
+              <span class="price">R$ 11,00</span>
+            </div>
+            <p class="desc">Para dar aquele ânimo.</p>
+          </div>
+        </article>
+      </li>
+
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" src="img/energetico-redbull-zero-user.jpg"
+               srcset="img/energetico-redbull-zero-user-480.jpg 480w, img/energetico-redbull-zero-user-768.jpg 768w, img/energetico-redbull-zero-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Energético RedBull Zero (un)" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Energético RedBull Zero (un)</h3>
+              <span class="price">R$ 13,00</span>
+            </div>
+            <p class="desc">250 ml, sem açúcar. Bem gelado.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" src="img/cafe-user.jpg" srcset="img/cafe-user-480.jpg 480w, img/cafe-user-768.jpg 768w, img/cafe-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Café (meio copo)</h3>
               <span class="price">R$ 2,00</span>
             </div>
-            <p class="desc">Passado na hora.</p>
+            <p class="desc">Frequinho e caprichado.</p>
           </div>
         </article>
       </li>
-    </ul>
+
+      <li class="item" data-cat="bebidas">
+        <article class="card">
+          <img class="thumb" src="img/cafe-com-leite-user.jpg"
+               srcset="img/cafe-com-leite-user-480.jpg 480w, img/cafe-com-leite-user-768.jpg 768w, img/cafe-com-leite-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="Café com Leite" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Café com Leite</h3>
+              <span class="price">R$ 3,00</span>
+            </div>
+            <p class="desc">Cremoso e na temperatura certa.</p>
+          </div>
+        </article>
+      </li>
+</ul>
 
     <!-- DOCES -->
     <h2 class="section-title" id="doces">Doces <span class="muted">• por Gabriela Mendanha</span></h2>
     <ul class="grid">
       <li class="item" data-cat="doces">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 480w, https://source.unsplash.com/768x576/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 768w, https://source.unsplash.com/1080x810/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978 1080w" src="https://source.unsplash.com/800x600/?coconut%20cake,bolo%20gelado,cake%20slice,bright&sig=1978" alt="Bolo Gelado" loading="lazy" decoding="async">
+          <img class="thumb" src="img/bolo-gelado-user.jpg" srcset="img/bolo-gelado-user-480.jpg 480w, img/bolo-gelado-user-768.jpg 768w, img/bolo-gelado-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Bolo Gelado</h3>
@@ -177,7 +308,7 @@
       </li>
       <li class="item" data-cat="doces">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 480w, https://source.unsplash.com/768x576/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 768w, https://source.unsplash.com/1080x810/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489 1080w" src="https://source.unsplash.com/800x600/?dessert%20jar,cake%20jar,cheesecake%20jar&sig=7489" alt="Tortas no pote" loading="lazy" decoding="async">
+          <img class="thumb" src="img/torta-pote-user.jpg" srcset="img/torta-pote-user-480.jpg 480w, img/torta-pote-user-768.jpg 768w, img/torta-pote-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Tortas no pote</h3>
@@ -189,7 +320,7 @@
       </li>
       <li class="item" data-cat="doces">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?pudim,flan,creme%20caramel,dessert&sig=2737 480w, https://source.unsplash.com/768x576/?pudim,flan,creme%20caramel,dessert&sig=2737 768w, https://source.unsplash.com/1080x810/?pudim,flan,creme%20caramel,dessert&sig=2737 1080w" src="https://source.unsplash.com/800x600/?pudim,flan,creme%20caramel,dessert&sig=2737" alt="Pudim" loading="lazy" decoding="async">
+          <img class="thumb" src="img/pudim-user.jpg" srcset="img/pudim-user-480.jpg 480w, img/pudim-user-768.jpg 768w, img/pudim-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Pudim</h3>
@@ -201,7 +332,7 @@
       </li>
       <li class="item" data-cat="doces">
         <article class="card">
-          <img class="thumb" width="800" height="600" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" srcset="https://source.unsplash.com/480x360/?cake%20slice,layer%20cake,dessert,bright&sig=4468 480w, https://source.unsplash.com/768x576/?cake%20slice,layer%20cake,dessert,bright&sig=4468 768w, https://source.unsplash.com/1080x810/?cake%20slice,layer%20cake,dessert,bright&sig=4468 1080w" src="https://source.unsplash.com/800x600/?cake%20slice,layer%20cake,dessert,bright&sig=4468" alt="Bolo (fatia)" loading="lazy" decoding="async">
+          <img class="thumb" src="img/bolo-fatia-user.jpg" srcset="img/bolo-fatia-user-480.jpg 480w, img/bolo-fatia-user-768.jpg 768w, img/bolo-fatia-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
           <div class="content">
             <div class="card-head">
               <h3>Bolo (fatia)</h3>
@@ -211,7 +342,90 @@
           </div>
         </article>
       </li>
-    </ul>
+
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" src="img/kitkat-user.jpg"
+               srcset="img/kitkat-user-480.jpg 480w, img/kitkat-user-768.jpg 768w, img/kitkat-user.jpg 1080w"
+               sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+               width="800" height="600" alt="KitKat" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>KitKat</h3>
+              <span class="price">R$ 5,00</span>
+            </div>
+            <p class="desc">Wafer coberto com chocolate ao leite.</p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" src="img/pacoca-user.jpg" srcset="img/pacoca-user-480.jpg 480w, img/pacoca-user-768.jpg 768w, img/pacoca-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Água c/ gás" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Paçoquinha (un)</h3>
+              <span class="price">R$ 0,50</span>
+            </div>
+            <p class="desc">Impossível comer só uma! </p>
+          </div>
+        </article>
+      </li>
+      <li class="item" data-cat="doces">
+        <article class="card">
+          <img class="thumb" src="img/pingo-mel-user.jpg" srcset="img/pingo-mel-user-480.jpg 480w, img/pingo-mel-user-768.jpg 768w, img/pingo-mel-user.jpg 1080w" sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw" width="800" height="600" alt="Pingo bel (un)" decoding="async" loading="lazy">
+          <div class="content">
+            <div class="card-head">
+              <h3>Pingo Bel (un)</h3>
+              <span class="price">R$ 3,00</span>
+            </div>
+            <p class="desc">Delicioso doce de leite. </p>
+          </div>
+        </article>
+      </li>
+</ul>
+
+
+  <h2 class="section-title" id="gelados">Gelados</h2>
+  <ul class="grid">
+    <li class="item" data-cat="gelados">
+      <article class="card">
+        <img class="thumb" src="img/acai-300ml-user.jpg"
+             srcset="img/acai-300ml-user-480.jpg 480w, img/acai-300ml-user-768.jpg 768w, img/acai-300ml-user.jpg 1080w"
+             sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+             width="800" height="600" alt="Trident (un)" decoding="async" loading="lazy">
+        <div class="content">
+          <div class="card-head">
+            <h3>Açaí 300 ml</h3>
+            <span class="price">R$ 12,00</span>
+          </div>
+          <p class="desc">Acompanhamentos inclusos: granola, leite condensado e 1 (uma) paçoquinha.</p>
+        </div>
+      </article>
+    </li>
+  </ul>
+  
+  <h2 class="section-title" id="outros">Outros</h2>
+  <ul class="grid">
+    <li class="item" data-cat="outros">
+      <article class="card">
+        <img class="thumb" src="img/trident-user.jpg"
+             srcset="img/trident-user-480.jpg 480w, img/trident-user-768.jpg 768w, img/trident-user.jpg 1080w"
+             sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, (max-width: 980px) 33vw, 25vw"
+             width="800" height="600" alt="Trident (un)" decoding="async" loading="lazy">
+        <div class="content">
+          <div class="card-head">
+            <h3>Trident (un)</h3>
+            <span class="price">R$ 3,00</span>
+          </div>
+          <p class="desc">Goma de mascar sabor menta.</p>
+        </div>
+      </article>
+    </li>
+  </ul>
+
+
+
+
 
     <aside class="promo" aria-label="Promo do dia">
       <div class="promo-badge">Promo do dia</div>
@@ -223,9 +437,8 @@
   <section class="info container" id="horarios">
     <h2 class="section-title">Horários</h2>
     <ul class="hours">
-      <li><strong>Seg–Sex:</strong> 08:00–20:00</li>
-      <li><strong>Sáb:</strong> 09:00–16:00</li>
-      <li><strong>Dom:</strong> Fechado</li>
+      <li><strong>Seg–Sex:</strong> 06:30–20:00</li>
+      <li><strong>Sáb-Dom:</strong> 07:00–20:00</li>
     </ul>
   </section>
 
@@ -234,13 +447,103 @@
     <p>Endereço: <strong>CAEBM - Sala do Cadete de Dia</strong></p>
   </section>
 
+    
+  <section class="info container payment" id="pagamento" aria-label="Pagamento">
+    <h2 class="section-title">Pagamento</h2>
+    <div class="pix-card">
+      <div class="pix-left">
+        <div class="pix-title">Pague via <strong>Pix</strong></div>
+        <div class="pix-sub">Recebedor: <strong>Breno de Jeiel Porto</strong></div>
+
+        <div class="pix-row">
+          <div>
+            <div class="pix-label">Tipo de chave</div>
+            <div class="pix-value">E-mail</div>
+          </div>
+          
+        </div>
+
+        <div class="pix-code">
+          <code id="pix-key">cfo.18turma@gmail.com</code>
+          <button class="copy-btn sm" data-target="#pix-key" aria-label="Copiar chave Pix">Copiar chave</button>
+        </div>
+
+        <p class="fine">Confirme o nome do recebedor ao finalizar o pagamento.</p>
+      </div>
+
+      <figure class="pix-qr">
+        <img src="img/pix-qr.jpg" alt="QR Code Pix" width="300" height="300" loading="lazy" decoding="async">
+        <figcaption class="pix-caption">Aponte a câmera ou copie a chave.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
   <footer class="site-footer container">
-    <p>© <span id="year"></span> Cantina GUARANI • Todos os direitos reservados</p>
-    <p class="fine">Cadete Carvalho, CFO II - A</p>
+    <p>© <span id="year"></span> Cadete CARVALHO, Turma GUARANI - CFO CBMGO • Todos os direitos reservados</p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <script>
+    (function(){
+      function copyText(text, btn){
+        if (!text) return;
+        (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
+          .catch(function(){
+            var ta=document.createElement('textarea'); ta.value=text;
+            document.body.appendChild(ta); ta.select();
+            try{document.execCommand('copy');}catch(e){}
+            document.body.removeChild(ta);
+          })
+          .finally(function(){
+            var t=btn.textContent; btn.textContent='Copiado!';
+            setTimeout(function(){ btn.textContent=t; }, 1200);
+          });
+      }
+      document.addEventListener('click', function(e){
+        var btn = e.target.closest('.copy-btn'); if(!btn) return;
+        var text = btn.getAttribute('data-copy');
+        var target = btn.getAttribute('data-target');
+        if(!text && target){ var el=document.querySelector(target); if(el) text=(el.textContent||'').trim(); }
+        copyText(text, btn);
+      });
+    })();
+  </script>
+
+
+  <script>
+    // Smooth scroll to sections when clicking on category tabs
+    (function(){
+      var labels = document.querySelectorAll('.tabs label[aria-controls]');
+      function offsetTopFor(el){
+        var y = el.getBoundingClientRect().top + window.pageYOffset;
+        var header = document.querySelector('.site-header');
+        var filters = document.querySelector('.filters');
+        var off = 0;
+        if (header) off += header.offsetHeight || 0;
+        if (filters) off += filters.offsetHeight || 0;
+        return Math.max(0, y - off - 8);
+      }
+      labels.forEach(function(lbl){
+        lbl.addEventListener('click', function(){
+          var id = lbl.getAttribute('aria-controls');
+          if (!id) return;
+          if (id === 'all') {
+            // scroll back near the filters
+            var filters = document.querySelector('.filters');
+            if (filters) window.scrollTo({ top: offsetTopFor(filters), behavior: 'smooth' });
+            return;
+          }
+          var target = document.getElementById(id);
+          if (!target) return;
+          window.scrollTo({ top: offsetTopFor(target), behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
+
 </body>
 </html>
